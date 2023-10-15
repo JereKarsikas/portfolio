@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <title>Jere's Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar sticky-top navbar-expand-md nav-bar-color">
+      <div class="container">
+        <a class="navbar-brand color-grey" href="#id_about">Jere</a>
+        <button
+          class="navbar-toggler hamburger-btn-color"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-sm-end"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav d-flex flex-column flex-md-row align-items-center"
+          >
+            <li class="nav-item mx-4">
+              <a
+                class="color-grey link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#id_about"
+              >
+                ABOUT ME
+              </a>
+            </li>
+
+            <li class="nav-item mx-4">
+              <a
+                class="color-grey link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#id_work"
+              >
+                EXPERIENCE
+              </a>
+            </li>
+
+            <li class="nav-item mx-4">
+              <a
+                class="color-grey link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#id_technologies"
+              >
+                TECHNOLOGIES
+              </a>
+            </li>
+
+            <li class="nav-item mx-4">
+              <a
+                class="color-grey link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#id_projects"
+              >
+                PROJECTS
+              </a>
+            </li>
+            <li>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="nav-item btn mx-4 nav-btn-color color-grey"
+                data-bs-toggle="modal"
+                data-bs-target="#contact-modal"
+              >
+                CONTACT
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="contact-modal"
+                tabindex="-1"
+                aria-labelledby="contact-modal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Contact me
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      The best way to contact me, is by sending me a message in
+                      <a
+                        href="https://www.linkedin.com/in/jere-karsikas-28491583/"
+                        target="_blank"
+                        >Linkedin</a
+                      >
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        class="btn nav-btn-color color-grey"
+                      >
+                        <a
+                          class="linkedin-button"
+                          href="https://www.linkedin.com/in/jere-karsikas-28491583/"
+                          target="_blank"
+                        >
+                          OKEY!
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- TOP BOX -->
+    <div id="id_about" class="top-wrapper position-relative">
+      <div class="container">
+        <div class="hero-title-wrapper p-5 position-relative">
+          <h1>Jere Karsikas</h1>
+          <p>Software developer</p>
+        </div>
+        <!-- ABOUT ME BOX -->
+        <div class="about-me-wrapper p-5 position-relative">
+          <div
+            class="line d-flex justify-content-center align-items-center"
+            aria-hidden="true"
+          >
+            <div class="inner-line"></div>
+          </div>
+          <div class="col-12 col-lg-6 py-5">
+            <h2 class="pb-3">About</h2>
+            <p>
+              I am Jere Karsikas and I'm based in Turku, Finland. I am a
+              multi-skilled person. I enjoy designing and creating things with
+              my computer, and also building and fixing stuff with my own hands.
+              I have graduated in airplane mechanics in 2006 and Industrial
+              management engineering in 2018. I was a exchange student in Brazil
+              in 2017.
+            </p>
+            <p>
+              In my free time, I like building my own projects like small
+              programs, furniture, or even fixing houses and cars. In the
+              summer, I like to play frisbeegolf. I am crazy about Saunas...
+              Really! I take sauna every single day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK EXPERIENCE -->
+
+    <div id="id_work" class="work-experience-wrapper">
+      <div class="container">
+        <h2 class="color-blue">Path in coding and work experience</h2>
+        <div class="experience-cols py-3 gx-md-5">
+          <p>
+            I got interested in programming in 2018 when I graduated as an
+            Industrial management engineer. Firstly, my interest was to support
+            my education, but, in 2020, I started to study coding by myself. I
+            started with HTML, CSS and JavaScript. I made some small projects
+            and noticed that coding was super fun and that I wanted to do it for
+            a living. In 2021 I took part of a recruiting training programming
+            by Saranen Consulting named DigiTalentPro. During this program I was
+            a trainee at Rento Innovations. After the training period was over,
+            I was hired as a Junior Full-stack developer.
+          </p>
+        </div>
+      </div>
+
+      <div class="container pt-3">
+        <div class="row">
+          <div id="timeline">
+            <div class="row timeline-movement">
+              <div class="timeline-badge center-left"></div>
+              <div class="col-sm-6 timeline-item">
+                <div class="row">
+                  <div class="col-sm-11">
+                    <div
+                      class="timeline-panel credits anim animate fadeInLeft p-4"
+                    >
+                      <h4>Junior Full Stack developer</h4>
+                      <p class="company-name">Rento Innovations Oy</p>
+                      <p class="color-blue">2022-2023</p>
+                      <p>
+                        Worked in the development of their own software BoxHunt,
+                        which is a system for tracing foodstuffs and boosting
+                        the efficiency of food production. My daily tasks
+                        included implementing new features and writing unit /
+                        integration tests.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row timeline-movement">
+              <div class="timeline-badge center-right"></div>
+              <div class="offset-sm-6 col-sm-6 timeline-item">
+                <div class="row">
+                  <div class="offset-sm-1 col-sm-11">
+                    <div class="timeline-panel debits anim animate fadeInRight">
+                      <h4>DigiTalentPro - F.E.C</h4>
+                      <p class="company-name">Saranen Consulting</p>
+                      <p class="color-blue">2021-2022</p>
+                      <p>
+                        DigiTalentPro is a recruiting training program where you
+                        work for 6 months in a cooperative company and study
+                        programming at the same time. Technologies learned
+                        during the program included, for example: Html, Css,
+                        JavaScript, React, Node.js, Java, among others.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row timeline-movement">
+              <div class="timeline-badge center-left"></div>
+              <div class="col-sm-6 timeline-item">
+                <div class="row">
+                  <div class="col-sm-11">
+                    <div class="timeline-panel credits anim animate fadeInLeft">
+                      <h4>Parts coordinator</h4>
+                      <p class="company-name">Wärtsilä Oyj</p>
+                      <p class="color-blue">2018-2020</p>
+                      <p>
+                        At Wärtsilä, I coordinated the orders of international
+                        customers and solved problematic situations related to
+                        those. Tools I used included SAP and Microsoft Office
+                        (especially Excel).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row timeline-movement">
+              <div class="timeline-badge center-right"></div>
+              <div class="offset-sm-6 col-sm-6 timeline-item">
+                <div class="row">
+                  <div class="offset-sm-1 col-sm-11">
+                    <div class="timeline-panel debits anim animate fadeInRight">
+                      <h4>Designer</h4>
+                      <p class="company-name">Meyer Turku Oy</p>
+                      <p class="color-blue">2016-2028</p>
+                      <p>
+                        At Meyer, I made my thesis about the development of a
+                        user interface that speeded up the stair design by more
+                        than half the time used previously. I continued at Meyer
+                        where I designed stairs for the cruisers. Tools I used
+                        included: SolidsWorks 3D, Cadmatic, AutoCad and Revit
+                        3D.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div id="id_technologies" class="technologies-wrapper">
+      <div class="container tech-tex-color">
+        <div class="d-flex align-items-center">
+          <h2>Technologies</h2>
+        </div>
+        <div class="row gx-md-5">
+          <div class="col-12 col-lg-6 col-xl-3 py-3">
+            <div class="tech-box p-4">
+              <div class="d-flex align-items-center justify-content-center">
+                <span class="tech-icons mx-4"><</span>
+                <h3>Frontend</h3>
+                <span class="tech-icons mx-4">></span>
+              </div>
+              <div class="text-left pt-1">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS <i>(Bulma, Bootstrap, Tachyons)</i></li>
+                  <li>Sass</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3 py-3">
+            <div class="tech-box p-4">
+              <div class="d-flex align-items-center justify-content-center">
+                <span class="tech-icons mx-4">{</span>
+                <h3>Backend</h3>
+                <span class="tech-icons mx-4">}</span>
+              </div>
+              <div class="text-left pt-1">
+                <ul>
+                  <li>Java</li>
+                  <li>Node.js</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3 py-3">
+            <div class="tech-box p-4">
+              <div class="d-flex align-items-center justify-content-center">
+                <span class="tech-icons mx-4">(</span>
+                <h3>Database</h3>
+                <span class="tech-icons mx-4">)</span>
+              </div>
+              <div class="text-left pt-1">
+                <ul>
+                  <li>MariaDB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3 py-3">
+            <div class="tech-box p-4">
+              <div class="d-flex align-items-center justify-content-center">
+                <span class="tech-icons mx-4">/</span>
+                <h3>Tools</h3>
+                <span class="tech-icons mx-4">/</span>
+              </div>
+              <div class="text-left pt-1">
+                <ul>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>BitBucket</li>
+                  <li>Trello</li>
+                  <li>Jira</li>
+                  <li>VS Code</li>
+                  <li>IntelliJ IDEA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="id_projects" class="project-wrapper">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <h2 class="color-blue">Projects</h2>
+        </div>
+
+        <p class="col-12 col-md-6 pt-4">
+          Among the below project is BoxHunt, which is a is a program that I
+          have developed in my last job, at Rento Innovations. The rest of the
+          projects are made for fun and studying new features and libraries. I
+          really enjoy frontend programming but I try develop my skills in
+          backend as well. Today I am studying through Udemy MERN technologies,
+          which include MongoDB, Express.js, React.js and Node.js.
+        </p>
+
+        <!-- BOXHUNT -->
+        <div class="project-box position-relative mb-5">
+          <div class="row py-3 px-5 gx-md-5">
+            <div class="col-12 col-lg-6 text-white pt-5">
+              <h3>BoxHunt</h3>
+
+              <div class="pt-4 project-text-color">
+                <p>
+                  At Rento Innovations Oy, I developed a cloud based system for
+                  food producers based on their needs. The system provides
+                  efficiency, traceability and quality for complete food supply
+                  chain. Integrations were created for retail and financial
+                  systems. Tools I used were React, Sass, Bulma, Java, REST API
+                  integrations, MariaDB, Git, BitBucket and Trello.
+                </p>
+              </div>
+
+              <!-- Tools to used in project -->
+              <div class="tools-tech-wrapper-2">
+                <div class="row pt-5">
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-html5 fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-css3-alt fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-react fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-sass fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-java fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-git-alt fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-bitbucket fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-trello fa-2xl project-icons"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Images -->
+            <div class="col-12 col-lg-6">
+              <div class="slider-wrapper">
+                <div class="main-image-wrapper">
+                  <img src="boxhunt1.png" alt="BoxHunt main page" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img
+                    src="boxhunt2.png"
+                    alt="BoxHunt Warehouse page with drang and drop button"
+                  />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="boxhunt3.png" alt="BoxHunt create new order page" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img
+                    src="boxhunt4.png"
+                    alt="BoxHunt Create new goods receiving page"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Link to GitHub -->
+            <div class="github-link pb-4">
+              <a href="https://boxhunt.fi/" target="_blank"
+                >Open BoxHunt home page >></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CAT FRIEND PROJECT -->
+        <div class="project-box position-relative mb-5">
+          <div class="row py-3 px-5 gx-md-5">
+            <div class="col-12 col-lg-6 text-white pt-5">
+              <h3>Cat Friends</h3>
+
+              <div class="pt-4 project-text-color">
+                <p>
+                  Cat friend is a project created with React Vite and the CSS
+                  libary Tachyons. You can add new cat friends with the desired
+                  name and city and also search the cat by its name. All cats
+                  have their own unique id so when you add a new cat, it's
+                  creates a unique looking cat for you. What about removing your
+                  cat? Well you can try it! Go ahead check out on GitHub.
+                </p>
+              </div>
+              <!-- Tools to used in project -->
+              <div class="tools-tech-wrapper-2">
+                <div class="row pt-5">
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-html5 fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-css3-alt fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-react fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-git-alt fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-github fa-2xl project-icons"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Images -->
+            <div class="col-12 col-lg-6">
+              <div class="slider-wrapper">
+                <div class="main-image-wrapper">
+                  <img src="cat1.png" alt="Cat friends main page" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="cat3.png" alt="Can't delete cat modal" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="cat2.png" alt="Create new cat form" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="cat4.png" alt="Search cat with name" />
+                </div>
+              </div>
+            </div>
+            <!-- Link to GitHub -->
+            <div class="github-link pb-4">
+              <a
+                href="https://jerekarsikas.github.io/catfriends/"
+                target="_blank"
+                >Open on GitHub >></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPENSES TRACKER -->
+        <div class="project-box position-relative mb-5">
+          <div class="row py-3 px-5 gx-md-5">
+            <div class="col-12 col-lg-6 text-white pt-5">
+              <h3>Expenses tracker</h3>
+
+              <div class="pt-4 project-text-color">
+                <p>
+                  This is a React project with CSS, where you can add new
+                  expeses and check total expenses in the current and previous
+                  years. The project was a good practice to understand how
+                  components, props and Hooks work.
+                </p>
+              </div>
+              <!-- Tools to used in project -->
+              <div class="tools-tech-wrapper-2">
+                <div class="row pt-5">
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-html5 fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-css3-alt fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-react fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-git-alt fa-2xl project-icons"></i>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-github fa-2xl project-icons"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Images -->
+            <div class="col-12 col-lg-6">
+              <div class="slider-wrapper">
+                <div class="main-image-wrapper">
+                  <img src="expenses1.png" alt="List of expenses" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="expenses2.png" alt="Create new expenses form" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="expenses3.png" alt="Added new expenses in list" />
+                </div>
+              </div>
+            </div>
+            <!-- Link to GitHub -->
+            <div class="github-link pb-4">
+              <a
+                href="https://jerekarsikas.github.io/expenses-tracker/"
+                target="_blank"
+                >Open on GitHub >></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- GUESS MY NUMBER -->
+        <div class="project-box position-relative mb-5">
+          <div class="row py-3 px-5 gx-md-5">
+            <div class="col-12 col-lg-6 text-white pt-5">
+              <h3>Guess my number</h3>
+
+              <div class="pt-4 project-text-color">
+                <p>
+                  This was a Vanilla JavaScrip project with CSS. It's a game
+                  where you can guess a random number between 1-20. It gives you
+                  hints if the number you guessed is wrong. It also saves your
+                  records. This game was good practice on how vanilla JavaScrip
+                  works. Go ahead and play yourself on Github!
+                </p>
+              </div>
+              <!-- Tools to used in project -->
+              <div class="tools-tech-wrapper-2">
+                <div class="row pt-5">
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-html5 fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-css3-alt fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-square-js fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-github fa-2xl project-icons"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Images -->
+            <div class="col-12 col-lg-6">
+              <div class="slider-wrapper">
+                <div class="main-image-wrapper">
+                  <img src="guess1.png" alt="List of expenses" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="guess2.png" alt="Create new expenses form" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="guess3.png" alt="Added new expenses in list" />
+                </div>
+              </div>
+            </div>
+            <!-- Link to GitHub -->
+            <div class="github-link pb-4">
+              <a
+                href="https://jerekarsikas.github.io/Guess-my-number/"
+                target="_blank"
+                >Open on GitHub >></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- PIG GAME -->
+        <div class="project-box position-relative mb-5">
+          <div class="row py-3 px-5 gx-md-5">
+            <div class="col-12 col-lg-6 text-white pt-5">
+              <h3>Pig game</h3>
+
+              <div class="pt-4 project-text-color">
+                <p>
+                  A game made with Vanilla JavaScrip and CSS. It's a game where
+                  you and a friend try to reach the score of 100 first. If you
+                  get the number 1, you lose all of yours unsaved points and
+                  your turn. Throw the dice and take the risk or play it safe,
+                  save your points and skip your turn.
+                </p>
+              </div>
+              <!-- Tools to used in project -->
+              <div class="tools-tech-wrapper-2">
+                <div class="row pt-5">
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-html5 fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-css3-alt fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-square-js fa-2xl project-icons"></i>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center tools-box"
+                  >
+                    <i class="fa-brands fa-github fa-2xl project-icons"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Images -->
+            <div class="col-12 col-lg-6">
+              <div class="slider-wrapper">
+                <div class="main-image-wrapper">
+                  <img src="pig1.png" alt="List of expenses" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="pig2.png" alt="Create new expenses form" />
+                </div>
+                <div class="main-image-wrapper">
+                  <img src="pig3.png" alt="Added new expenses in list" />
+                </div>
+              </div>
+            </div>
+            <!-- Link to GitHub -->
+            <div class="github-link pb-4">
+              <a href="https://jerekarsikas.github.io/pig-game/" target="_blank"
+                >Open on GitHub >></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 text-white">
+            <!-- Linkedin icon button -->
+            <a
+              href="https://www.linkedin.com/in/jere-karsikas-28491583/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-linkedin"
+                style="font-size: 36px; color: white"
+              ></i>
+            </a>
+
+            <!-- GitHub icon button -->
+            <a
+              class="mx-4"
+              href="https://github.com/JereKarsikas"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-github"
+                style="font-size: 36px; color: white"
+              ></i>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 text-white">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn mt-1 nav-btn-color color-grey"
+              data-bs-toggle="modal"
+              data-bs-target="#contact-modal"
+            >
+              CONTACT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>

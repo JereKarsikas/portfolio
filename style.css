@@ -1,0 +1,237 @@
+:root {
+  --color-blue: #41b0a3;
+  --color-dark-blue: #2c2b3a;
+  --color-dark: #272730;
+  --color-grey: #e8e8e8;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+p,
+li,
+a {
+  font-size: 18px;
+}
+
+.navbar-brand:hover {
+  color: var(--color-blue);
+}
+
+.company-name {
+  font-weight: 500;
+  margin: 0;
+}
+
+.tech-icons {
+  color: var(--color-blue);
+  font-size: 62px;
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
+.color-grey {
+  color: var(--color-grey);
+}
+
+/* NAVIGATION BAR */
+.nav-bar-color {
+  background-color: var(--color-dark);
+}
+
+.nav-btn-color {
+  background-color: var(--color-blue);
+}
+.nav-btn-color:hover {
+  background-color: #40cbbb;
+}
+
+.hamburger-btn-color {
+  background-color: var(--color-blue);
+}
+
+.nav-item {
+  margin-top: 1em;
+}
+
+.top-wrapper {
+  background-image: linear-gradient(
+    var(--color-dark) 75%,
+    var(--color-grey) 25%
+  );
+}
+
+/* ABOUT */
+.about-me-wrapper {
+  color: var(--color-grey);
+  background-color: var(--color-dark-blue);
+}
+
+.hero-title-wrapper {
+  width: fit-content;
+  transform: translateY(39%);
+  color: var(--color-grey);
+  z-index: 50;
+}
+
+.hero-title-wrapper p {
+  text-align: end;
+  color: var(--color-grey);
+  margin: 0;
+}
+
+/* WORK EXPERIENCE */
+.work-experience-wrapper {
+  background-color: var(--color-grey);
+  padding: 4em 0;
+}
+
+.experience-cols {
+  column-count: 2;
+  column-gap: 6em;
+}
+
+/* TECHNOLOGIES */
+.technologies-wrapper {
+  background-color: var(--color-dark);
+  padding: 4em 0;
+}
+
+.tech-tex-color {
+  color: var(--color-grey);
+}
+
+.tech-box {
+  background-color: var(--color-dark-blue);
+  height: 100%;
+}
+
+/* PROJECTS */
+.project-box {
+  background-color: var(--color-dark);
+  min-height: 20em;
+  overflow: hidden;
+}
+
+.project-text-color {
+  color: var(--color-grey);
+}
+
+.project-wrapper {
+  background-color: var(--color-grey);
+  padding: 4em 0;
+}
+
+.tools-box {
+  background-color: #323147bd;
+  border-radius: 100%;
+  width: 3em;
+  height: 3em;
+  margin-right: 2em;
+  margin-bottom: 1.5em;
+}
+
+.project-icons {
+  color: var(--color-blue);
+}
+
+.github-link a {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+
+/* PROJECT IMAGES */
+.main-image-wrapper {
+  position: relative;
+  aspect-ratio: 6 / 4;
+}
+
+.main-image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 3em;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff !important;
+}
+
+.slick-dots li button:before {
+  color: #fff !important;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--color-dark);
+  padding: 2em 0;
+}
+
+.linkedin-button {
+  text-decoration: none;
+  color: var(--color-grey);
+}
+
+.modal-backdrop {
+  z-index: 1;
+}
+
+.line {
+  width: 200px;
+  height: 200px;
+  border-right: 5px solid var(--color-blue);
+  border-top: 5px solid var(--color-blue);
+  position: absolute;
+  right: -50px;
+  top: -50px;
+}
+
+.inner-line {
+  width: 80%;
+  height: 80%;
+  border-right: 5px solid var(--color-blue);
+  border-top: 5px solid var(--color-blue);
+}
+
+@media screen and (max-width: 992px) {
+  .experience-cols {
+    column-count: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-box {
+    padding-bottom: 5em;
+  }
+
+  .timeline-panel h4 {
+    padding-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .line {
+    display: none !important;
+  }
+}
